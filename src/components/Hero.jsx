@@ -174,7 +174,7 @@ const Hero = () => {
                   className="border-2 border-black bg-amber-200 text-black px-8 py-4 rounded-full font-semibold text-lg md:text-xl hover:bg-black hover:text-white transition-colors w-full sm:w-auto"
                   
                 >
-                Call Our Custom Genies
+                Call Our Booking Genies
                 </button>
              </a>
 
