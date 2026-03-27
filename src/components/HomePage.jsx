@@ -11,6 +11,7 @@ import DownloadSection from './Dowload'
 import Footer from './Footer'
 import DrizzyPreview from './CurriculumSection'
 import CurriculumSection from './CurriculumSection'
+// import FixedNavbar from './FixedNavbar'
 
 const HomePage = () => {
   return (
@@ -33,6 +34,7 @@ const HomePage = () => {
       <Driver />
       <DownloadSection />
       <Footer />
+      {/* <FixedNavbar/> */}
     </div>
   )
 }
