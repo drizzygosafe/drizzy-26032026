@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Star, StarHalf, Car, Calendar, Award, SwitchCamera, Rocket, TrafficCone, UserSearch, KeySquare, TentTree } from 'lucide-react';
+import { Star, StarHalf, Car, Calendar, Award, SwitchCamera, Rocket, TrafficCone, UserSearch, KeySquare, TentTree, MapPinCheck } from 'lucide-react';
 
 // SWIPER
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -60,7 +60,9 @@ const Testimonials = () => {
       rating: 4.8,
       review: "Drizzy made learning to drive so easy! The booking process was smooth, and my instructor was incredibly patient. Passed my test on the first attempt!",
       imageUrl: "student4.jpg",
-      icon: <Car className="w-5 h-5 text-yellow-500" />
+      icon: <Car className="w-5 h-5 text-yellow-500" />,
+      location: "Sector 100, Noida",
+      locationIcon: <MapPinCheck className="w-5 h-5 text-yellow-500" />
     },
     {
       id: 2,
@@ -69,7 +71,9 @@ const Testimonials = () => {
       rating: 4.9,
       review: "As a busy student, I loved how easy it was to schedule lessons and decided to take Drizzy's course before moving abroad. The reminders and progress tracking were super helpful.",
       imageUrl: "student2.jpg",
-      icon: <Calendar className="w-5 h-5 text-yellow-500" />
+      icon: <Calendar className="w-5 h-5 text-yellow-500" />,
+      location: "Kalkaji, Delhi",
+      locationIcon: <MapPinCheck className="w-5 h-5 text-yellow-500" />
     },
     {
       id: 3,
@@ -78,71 +82,82 @@ const Testimonials = () => {
       rating: 5.0,
       review: "The structured learning approach and supportive instructors helped me overcome my driving anxiety. Now I'm a confident driver thanks to Drizzy!",
       imageUrl: "student1.jpg",
-      icon: <Award className="w-5 h-5 text-yellow-500" />
+      icon: <Award className="w-5 h-5 text-yellow-500" />,
+      location: "Rajouri Garden, Delhi",
+      locationIcon: <MapPinCheck className="w-5 h-5 text-yellow-500" />
     },
     
     {
-       id: 9,
+       id: 4,
       name: "Shivanand",
       achievement: "Cut Throat Simplicity!",
       rating: 4.9,
       review: "Just wanted to have some brush up sessions wherein traditional trainers were just taking the booking but weren’t showing up at all with some random excuses. Drizzy aligned their trainer within minutes for me.",
       imageUrl: "Shivanand.png",
-      icon: <Rocket className="w-5 h-5 text-yellow-500" />
+      icon: <Rocket className="w-5 h-5 text-yellow-500" />,
+      location: "Sector 79, Gurgaon",
+      locationIcon: <MapPinCheck className="w-5 h-5 text-yellow-500" />
 
     },
     
     {
-       id: 4,
+       id: 5,
       name: "Hema",
       achievement: "Easily Switched Trainers!",
       rating: 4.8,
-      review: "During my 10th session, the trainer informed me, due to some family emergency, he won’t be able to complete my last 5 days but Drizzy arranged a replacement for him from the very next day",
+      review: "During my 10th session, the trainer informed me, due to some family emergency, he won’t be able to complete my last 5 days but Drizzy arranged a replacement for him from the very next day.",
       imageUrl: "Hema.png",
-      icon: <SwitchCamera className="w-5 h-5 text-yellow-500" />
+      icon: <SwitchCamera className="w-5 h-5 text-yellow-500" />,
+      location: "Dwarka, Delhi",
+      locationIcon: <MapPinCheck className="w-5 h-5 text-yellow-500" />
 
     },
 
      {
-       id: 5,
+       id: 6,
       name: "Srijeeta",
       achievement: "Practical from Day 1!",
       rating: 5.0,
       review: "The car was very well maintained and the trainer was super focused on the sessions and gave enough time for experimentation and took it as per my speed.",
       imageUrl: "Srijeeta (2).png",
-      icon: <TrafficCone className="w-5 h-5 text-yellow-500" />
+      icon: <TrafficCone className="w-5 h-5 text-yellow-500" />,
+      location: "C.R. Park, Delhi",
+      locationIcon: <MapPinCheck className="w-5 h-5 text-yellow-500" />
 
     },
      {
-       id: 6,
+       id: 7,
       name: "Dr. Sneha Singh",
       achievement: "Personally Curated & Managed!",
       rating: 5.0,
       review: "My sister referred me to Drizzy's Curriculum and post going through it, now I certainly know why she did so. Super well managed by their team with my hectic hospital shifts.",
       imageUrl: "Dr. Sneha Singh.png",
-      icon: <UserSearch className="w-5 h-5 text-yellow-500" />
-
+      icon: <UserSearch className="w-5 h-5 text-yellow-500" />,
+      location: "Vaibhav Khand 1, Indirapuram",
+      locationIcon: <MapPinCheck className="w-5 h-5 text-yellow-500" />
     },
     
      {
-       id: 7,
+       id: 8,
       name: "Shree",
       achievement: "Personal Car Explored!",
       rating: 4.5,
       review: "I wanted to experience learning in my personally owned car because that’s what I have to drive everyday, right! We had some challenges here and there, but Drizzy stood at the right corner for us.",
       imageUrl: "Shree.png",
-      icon: <KeySquare className="w-5 h-5 text-yellow-500" />
-
+      icon: <KeySquare className="w-5 h-5 text-yellow-500" />,
+      location: "South Extension, Delhi",
+      locationIcon: <MapPinCheck className="w-5 h-5 text-yellow-500" />
     },
   {
-       id: 8,
+       id: 9,
       name: "Ranjeet Singh",
       achievement: "Leaves Approved!",
       rating: 4.9,
       review: "I was running into critical situations at my office but Drizzy’s trainers managed my leave requests easily and gave me alternate options to cover my classes.",
       imageUrl: "Ranjeet Singh.png",
-      icon: <TentTree className="w-5 h-5 text-yellow-500" />
-
+      icon: <TentTree className="w-5 h-5 text-yellow-500" />,
+      location: "Tagore Garden, Delhi",
+      locationIcon: <MapPinCheck className="w-5 h-5 text-yellow-500" />
     },
 
   ];
@@ -155,16 +170,32 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto">
 
         {/* HEADER */}
-        <div className={`text-center mb-12 transition-all duration-700 ${
+        <div className={`text-center mb-10 transition-all duration-700 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
             Our Cult and their Stories
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
           Let’s hear from the thousands of learners joining our cult and completing each day.
           </p>
         </div>
+
+         /* {/* Youtube Video  */}
+
+        {/* Youtube Video  */}
+<div className="mb-10 flex justify-center">
+  <div className="w-full max-w-2xl max-h-64 aspect-video">
+    <iframe
+      className="w-full h-full rounded-xl shadow-lg"
+      src="https://www.youtube.com/embed/YOUR_VIDEO_ID" // Here Paste the link of your video 
+      title="Testimonial YouTube Video"
+      
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div> */
 
         {/* SWIPER SLIDER */}
         <Swiper
@@ -208,6 +239,10 @@ const Testimonials = () => {
   <div>
     <h3 className="font-semibold">{t.name}</h3>
     <p className="text-xs text-gray-600">{t.achievement}</p>
+    <div className='flex gap-1 text-xs'>
+        <p className='mt-1'>{t.locationIcon}</p>
+        <p className='text-gray-600 mt-1.5'>{t.location}</p>
+    </div>
   </div>
 
 </div>
