@@ -181,10 +181,10 @@ const Testimonials = () => {
           </p>
         </div>
 
-         /* {/* Youtube Video  */}
+        {/* Youtube Video  */}
 
         {/* Youtube Video  */}
-<div className="mb-10 flex justify-center">
+{/* <div className="mb-10 flex justify-center">
   <div className="w-full max-w-2xl max-h-64 aspect-video">
     <iframe
       className="w-full h-full rounded-xl shadow-lg"
@@ -195,7 +195,7 @@ const Testimonials = () => {
       allowFullScreen
     ></iframe>
   </div>
-</div> */
+</div> */}
 
         {/* SWIPER SLIDER */}
         <Swiper
