@@ -163,7 +163,7 @@ const ProfessionalDrivers = () => {
             We Provide the Best to You from Over 170+ Trainers
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Our certified professional instructors come with an experience of over 15.2+ years.
+            Our certified professional instructors come with an experience of over 25.2+ years.
           </p>
         </div>
 
