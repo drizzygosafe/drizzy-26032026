@@ -6,3 +6,12 @@
     }
   ]
 }
+
+{
+  "rewrites": [
+    {
+      "source": "/pitchdeck",
+      "destination": "/pitchdeck.html"
+    }
+  ]
+}
