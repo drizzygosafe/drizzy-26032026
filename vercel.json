@@ -10,8 +10,8 @@
 {
   "rewrites": [
     {
-      "source": "/pitchdeck",
-      "destination": "/pitchdeck.html"
+      "source": "/pitchdeck.html",
+      "destination": "/pitchdeck"
     }
   ]
 }
