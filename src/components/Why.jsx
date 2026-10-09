@@ -12,7 +12,7 @@ const features = [
   },
   {
     title: "Curriculum Focused Approach",
-    description: "Our trainer’s follow a well crafted curriculum to train you from basics to advanced tricks. Don’t worry we keep a scope for experimentation!"
+    description: "Our trainers follow a well crafted curriculum to train you from basics to advanced tricks. Don’t worry we keep a scope for experimentation!"
   },
   {
     title: "Trainer Switching",
