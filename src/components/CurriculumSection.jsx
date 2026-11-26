@@ -125,6 +125,19 @@ const CurriculumSection = () => {
 					))}
 				</div>
 
+			{/* Detailed Curriculum */}
+        <div id='detailed-curriculum' className="mt-12 text-center">
+          <p className="text-gray-600">
+            Let's explore a{' '}
+            <a 
+              href="www.drizzy.in/curriculum" 
+              className="text-yellow-600 hover:text-yellow-700 font-medium underline decoration-2 decoration-yellow-200 hover:decoration-yellow-400 transition-colors"
+            >
+              detailed curriculum!
+            </a>
+          </p>
+        </div>
+
 			</div>
 		</section>
 	);
