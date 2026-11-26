@@ -126,7 +126,7 @@ const CurriculumSection = () => {
 				</div>
 
 			{/* Detailed Curriculum */}
-          <h3 className="text-xl text-black text-center mb-5">
+          <h3 className="text-xl text-black text-center mt-12">
             Let's explore a{' '}
             <a 
               href="curriculum" 
