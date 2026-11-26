@@ -5,6 +5,10 @@
       "destination": "/pitchdeck.html"
     },
     {
+      "source": "/curriculum",
+      "destination": "/curriculum.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
