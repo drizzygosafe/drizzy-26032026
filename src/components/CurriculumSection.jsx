@@ -104,7 +104,7 @@ const CurriculumSection = () => {
 					What’s in the Palette for Our Cult
 				</p>
 
-				<h3 className="text-xl text-blaclk text-center mb-5">Vehicle Type</h3>
+				<h3 className="text-xl text-black text-center mb-5">Vehicle Type</h3>
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
 					{carStyles.map((item) => (
 						<Box key={item} item={item} />
@@ -126,8 +126,8 @@ const CurriculumSection = () => {
 				</div>
 
 			{/* Detailed Curriculum */}
-        <div id='detailed-curriculum' className="mt-12 text-center">
-          <p className="text-gray-600">
+        <div id='detailed-curriculum'>
+          <h3 className="text-xl text-black text-center mb-5">
             Let's explore a{' '}
             <a 
               href="curriculum" 
@@ -135,7 +135,7 @@ const CurriculumSection = () => {
             >
               detailed curriculum!
             </a>
-          </p>
+          </h3>
         </div>
 
 			</div>
