@@ -126,7 +126,6 @@ const CurriculumSection = () => {
 				</div>
 
 			{/* Detailed Curriculum */}
-        <div id='detailed-curriculum'>
           <h3 className="text-xl text-black text-center mb-5">
             Let's explore a{' '}
             <a 
@@ -136,7 +135,6 @@ const CurriculumSection = () => {
               detailed curriculum!
             </a>
           </h3>
-        </div>
 
 			</div>
 		</section>
